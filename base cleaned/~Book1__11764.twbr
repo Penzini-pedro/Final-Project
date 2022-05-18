@@ -1,0 +1,1052 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0415.1144                               -->
+<workbook original-version='18.1' source-build='2022.1.1 (20221.22.0415.1144)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <Extensions />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Sheet1 (test)' inline='true' name='federated.1kpo47n01ei1fo15l5hvd1dbhk8n' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='test' name='excel-direct.1frgiif0jvlyvi1fevs831mg2v4g'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/penzi/Desktop/test.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='bases_bicimad' name='textscan.169s57r0eoh6gy15rv6jr1ddl7s3'>
+            <connection class='textscan' directory='C:/Users/penzi/Desktop/Final-Project-01/base cleaned' filename='bases_bicimad.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1frgiif0jvlyvi1fevs831mg2v4g' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:I14762:no:A1:I14762:0' header='yes' outcome='6'>
+            <column datatype='string' name='start_station' ordinal='0' />
+            <column datatype='string' name='end_station' ordinal='1' />
+            <column datatype='integer' name='size' ordinal='2' />
+            <column datatype='real' name='start_station_Latitud' ordinal='3' />
+            <column datatype='real' name='start_station_Longitud' ordinal='4' />
+            <column datatype='real' name='end_station_Longitud' ordinal='5' />
+            <column datatype='real' name='end_station_Latitud' ordinal='6' />
+            <column datatype='integer' name='travel_time' ordinal='7' />
+            <column datatype='string' name='hour_time' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='excel-direct.1frgiif0jvlyvi1fevs831mg2v4g' name='Sheet1' table='[Sheet1$]' type='table'>
+            <columns gridOrigin='A1:I14762:no:A1:I14762:0' header='yes' outcome='6'>
+              <column datatype='string' name='start_station' ordinal='0' />
+              <column datatype='string' name='end_station' ordinal='1' />
+              <column datatype='integer' name='size' ordinal='2' />
+              <column datatype='real' name='start_station_Latitud' ordinal='3' />
+              <column datatype='real' name='start_station_Longitud' ordinal='4' />
+              <column datatype='real' name='end_station_Longitud' ordinal='5' />
+              <column datatype='real' name='end_station_Latitud' ordinal='6' />
+              <column datatype='integer' name='travel_time' ordinal='7' />
+              <column datatype='string' name='hour_time' ordinal='8' />
+            </columns>
+          </relation>
+          <relation connection='textscan.169s57r0eoh6gy15rv6jr1ddl7s3' name='bases_bicimad.csv1' table='[bases_bicimad#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='es_VE' separator=';'>
+              <column datatype='string' name='Número' ordinal='0' />
+              <column datatype='real' name='Gis_X' ordinal='1' />
+              <column datatype='real' name='Gis_Y' ordinal='2' />
+              <column datatype='integer' name='Fecha de Alta' ordinal='3' />
+              <column datatype='string' name='Distrito' ordinal='4' />
+              <column datatype='string' name='Barrio' ordinal='5' />
+              <column datatype='string' name='Calle' ordinal='6' />
+              <column datatype='string' name='Nº Finca' ordinal='7' />
+              <column datatype='string' name='Tipo de Reserva' ordinal='8' />
+              <column datatype='integer' name='Número de Plazas' ordinal='9' />
+              <column datatype='string' name='Longitud' ordinal='10' />
+              <column datatype='string' name='Latitud' ordinal='11' />
+              <column datatype='string' name='Direccion' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.169s57r0eoh6gy15rv6jr1ddl7s3' name='bases_bicimad.csv' table='[bases_bicimad#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='es_VE' separator=';'>
+              <column datatype='string' name='Número' ordinal='0' />
+              <column datatype='real' name='Gis_X' ordinal='1' />
+              <column datatype='real' name='Gis_Y' ordinal='2' />
+              <column datatype='integer' name='Fecha de Alta' ordinal='3' />
+              <column datatype='string' name='Distrito' ordinal='4' />
+              <column datatype='string' name='Barrio' ordinal='5' />
+              <column datatype='string' name='Calle' ordinal='6' />
+              <column datatype='string' name='Nº Finca' ordinal='7' />
+              <column datatype='string' name='Tipo de Reserva' ordinal='8' />
+              <column datatype='integer' name='Número de Plazas' ordinal='9' />
+              <column datatype='string' name='Longitud' ordinal='10' />
+              <column datatype='string' name='Latitud' ordinal='11' />
+              <column datatype='string' name='Direccion' ordinal='12' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Barrio (bases_bicimad.csv1)]' value='[bases_bicimad.csv1].[Barrio]' />
+          <map key='[Barrio]' value='[bases_bicimad.csv].[Barrio]' />
+          <map key='[Calle (bases_bicimad.csv1)]' value='[bases_bicimad.csv1].[Calle]' />
+          <map key='[Calle]' value='[bases_bicimad.csv].[Calle]' />
+          <map key='[Direccion (bases_bicimad.csv1)]' value='[bases_bicimad.csv1].[Direccion]' />
+          <map key='[Direccion]' value='[bases_bicimad.csv].[Direccion]' />
+          <map key='[Distrito (bases_bicimad.csv1)]' value='[bases_bicimad.csv1].[Distrito]' />
+          <map key='[Distrito]' value='[bases_bicimad.csv].[Distrito]' />
+          <map key='[Fecha de Alta (bases_bicimad.csv1)]' value='[bases_bicimad.csv1].[Fecha de Alta]' />
+          <map key='[Fecha de Alta]' value='[bases_bicimad.csv].[Fecha de Alta]' />
+          <map key='[Gis_X (bases_bicimad.csv1)]' value='[bases_bicimad.csv1].[Gis_X]' />
+          <map key='[Gis_X]' value='[bases_bicimad.csv].[Gis_X]' />
+          <map key='[Gis_Y (bases_bicimad.csv1)]' value='[bases_bicimad.csv1].[Gis_Y]' />
+          <map key='[Gis_Y]' value='[bases_bicimad.csv].[Gis_Y]' />
+          <map key='[Latitud (bases_bicimad.csv1)]' value='[bases_bicimad.csv1].[Latitud]' />
+          <map key='[Latitud]' value='[bases_bicimad.csv].[Latitud]' />
+          <map key='[Longitud (bases_bicimad.csv1)]' value='[bases_bicimad.csv1].[Longitud]' />
+          <map key='[Longitud]' value='[bases_bicimad.csv].[Longitud]' />
+          <map key='[Nº Finca (bases_bicimad.csv1)]' value='[bases_bicimad.csv1].[Nº Finca]' />
+          <map key='[Nº Finca]' value='[bases_bicimad.csv].[Nº Finca]' />
+          <map key='[Número (bases_bicimad.csv1)]' value='[bases_bicimad.csv1].[Número]' />
+          <map key='[Número de Plazas (bases_bicimad.csv1)]' value='[bases_bicimad.csv1].[Número de Plazas]' />
+          <map key='[Número de Plazas]' value='[bases_bicimad.csv].[Número de Plazas]' />
+          <map key='[Número]' value='[bases_bicimad.csv].[Número]' />
+          <map key='[Tipo de Reserva (bases_bicimad.csv1)]' value='[bases_bicimad.csv1].[Tipo de Reserva]' />
+          <map key='[Tipo de Reserva]' value='[bases_bicimad.csv].[Tipo de Reserva]' />
+          <map key='[end_station]' value='[Sheet1].[end_station]' />
+          <map key='[end_station_Latitud]' value='[Sheet1].[end_station_Latitud]' />
+          <map key='[end_station_Longitud]' value='[Sheet1].[end_station_Longitud]' />
+          <map key='[hour_time]' value='[Sheet1].[hour_time]' />
+          <map key='[size]' value='[Sheet1].[size]' />
+          <map key='[start_station]' value='[Sheet1].[start_station]' />
+          <map key='[start_station_Latitud]' value='[Sheet1].[start_station_Latitud]' />
+          <map key='[start_station_Longitud]' value='[Sheet1].[start_station_Longitud]' />
+          <map key='[travel_time]' value='[Sheet1].[travel_time]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:I14762:no:A1:I14762:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[bases_bicimad.csv1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Bs.F.&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_VE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[bases_bicimad.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Bs.F.&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_VE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_station</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[start_station]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>start_station</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RVE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_356C02905E294CADB25818D1EB3EC2A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_station</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[end_station]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>end_station</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RVE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_356C02905E294CADB25818D1EB3EC2A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>size</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[size]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>size</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_356C02905E294CADB25818D1EB3EC2A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_station_Latitud</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start_station_Latitud]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>start_station_Latitud</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_356C02905E294CADB25818D1EB3EC2A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_station_Longitud</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start_station_Longitud]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>start_station_Longitud</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_356C02905E294CADB25818D1EB3EC2A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_station_Longitud</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end_station_Longitud]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>end_station_Longitud</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_356C02905E294CADB25818D1EB3EC2A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_station_Latitud</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end_station_Latitud]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>end_station_Latitud</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_356C02905E294CADB25818D1EB3EC2A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>travel_time</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[travel_time]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>travel_time</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_356C02905E294CADB25818D1EB3EC2A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hour_time</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[hour_time]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>hour_time</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RVE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_356C02905E294CADB25818D1EB3EC2A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Número</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Número (bases_bicimad.csv1)]</local-name>
+            <parent-name>[bases_bicimad.csv1]</parent-name>
+            <remote-alias>Número</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bases_bicimad.csv_BC1DC25F43A547DA9ADFCEF801BD79CF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gis_X</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gis_X (bases_bicimad.csv1)]</local-name>
+            <parent-name>[bases_bicimad.csv1]</parent-name>
+            <remote-alias>Gis_X</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bases_bicimad.csv_BC1DC25F43A547DA9ADFCEF801BD79CF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gis_Y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gis_Y (bases_bicimad.csv1)]</local-name>
+            <parent-name>[bases_bicimad.csv1]</parent-name>
+            <remote-alias>Gis_Y</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bases_bicimad.csv_BC1DC25F43A547DA9ADFCEF801BD79CF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fecha de Alta</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fecha de Alta (bases_bicimad.csv1)]</local-name>
+            <parent-name>[bases_bicimad.csv1]</parent-name>
+            <remote-alias>Fecha de Alta</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bases_bicimad.csv_BC1DC25F43A547DA9ADFCEF801BD79CF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Distrito</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Distrito (bases_bicimad.csv1)]</local-name>
+            <parent-name>[bases_bicimad.csv1]</parent-name>
+            <remote-alias>Distrito</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bases_bicimad.csv_BC1DC25F43A547DA9ADFCEF801BD79CF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Barrio</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Barrio (bases_bicimad.csv1)]</local-name>
+            <parent-name>[bases_bicimad.csv1]</parent-name>
+            <remote-alias>Barrio</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bases_bicimad.csv_BC1DC25F43A547DA9ADFCEF801BD79CF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Calle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Calle (bases_bicimad.csv1)]</local-name>
+            <parent-name>[bases_bicimad.csv1]</parent-name>
+            <remote-alias>Calle</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bases_bicimad.csv_BC1DC25F43A547DA9ADFCEF801BD79CF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nº Finca</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nº Finca (bases_bicimad.csv1)]</local-name>
+            <parent-name>[bases_bicimad.csv1]</parent-name>
+            <remote-alias>Nº Finca</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bases_bicimad.csv_BC1DC25F43A547DA9ADFCEF801BD79CF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tipo de Reserva</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tipo de Reserva (bases_bicimad.csv1)]</local-name>
+            <parent-name>[bases_bicimad.csv1]</parent-name>
+            <remote-alias>Tipo de Reserva</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bases_bicimad.csv_BC1DC25F43A547DA9ADFCEF801BD79CF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Número de Plazas</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Número de Plazas (bases_bicimad.csv1)]</local-name>
+            <parent-name>[bases_bicimad.csv1]</parent-name>
+            <remote-alias>Número de Plazas</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bases_bicimad.csv_BC1DC25F43A547DA9ADFCEF801BD79CF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitud</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Longitud (bases_bicimad.csv1)]</local-name>
+            <parent-name>[bases_bicimad.csv1]</parent-name>
+            <remote-alias>Longitud</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bases_bicimad.csv_BC1DC25F43A547DA9ADFCEF801BD79CF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitud</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Latitud (bases_bicimad.csv1)]</local-name>
+            <parent-name>[bases_bicimad.csv1]</parent-name>
+            <remote-alias>Latitud</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bases_bicimad.csv_BC1DC25F43A547DA9ADFCEF801BD79CF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Direccion</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Direccion (bases_bicimad.csv1)]</local-name>
+            <parent-name>[bases_bicimad.csv1]</parent-name>
+            <remote-alias>Direccion</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bases_bicimad.csv_BC1DC25F43A547DA9ADFCEF801BD79CF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Número</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Número]</local-name>
+            <parent-name>[bases_bicimad.csv]</parent-name>
+            <remote-alias>Número</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bases_bicimad.csv_F31182E7B7384CAFA03022B9484242ED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gis_X</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gis_X]</local-name>
+            <parent-name>[bases_bicimad.csv]</parent-name>
+            <remote-alias>Gis_X</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bases_bicimad.csv_F31182E7B7384CAFA03022B9484242ED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gis_Y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gis_Y]</local-name>
+            <parent-name>[bases_bicimad.csv]</parent-name>
+            <remote-alias>Gis_Y</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bases_bicimad.csv_F31182E7B7384CAFA03022B9484242ED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fecha de Alta</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fecha de Alta]</local-name>
+            <parent-name>[bases_bicimad.csv]</parent-name>
+            <remote-alias>Fecha de Alta</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bases_bicimad.csv_F31182E7B7384CAFA03022B9484242ED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Distrito</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Distrito]</local-name>
+            <parent-name>[bases_bicimad.csv]</parent-name>
+            <remote-alias>Distrito</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bases_bicimad.csv_F31182E7B7384CAFA03022B9484242ED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Barrio</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Barrio]</local-name>
+            <parent-name>[bases_bicimad.csv]</parent-name>
+            <remote-alias>Barrio</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bases_bicimad.csv_F31182E7B7384CAFA03022B9484242ED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Calle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Calle]</local-name>
+            <parent-name>[bases_bicimad.csv]</parent-name>
+            <remote-alias>Calle</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bases_bicimad.csv_F31182E7B7384CAFA03022B9484242ED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nº Finca</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nº Finca]</local-name>
+            <parent-name>[bases_bicimad.csv]</parent-name>
+            <remote-alias>Nº Finca</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bases_bicimad.csv_F31182E7B7384CAFA03022B9484242ED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tipo de Reserva</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tipo de Reserva]</local-name>
+            <parent-name>[bases_bicimad.csv]</parent-name>
+            <remote-alias>Tipo de Reserva</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bases_bicimad.csv_F31182E7B7384CAFA03022B9484242ED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Número de Plazas</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Número de Plazas]</local-name>
+            <parent-name>[bases_bicimad.csv]</parent-name>
+            <remote-alias>Número de Plazas</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bases_bicimad.csv_F31182E7B7384CAFA03022B9484242ED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitud</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Longitud]</local-name>
+            <parent-name>[bases_bicimad.csv]</parent-name>
+            <remote-alias>Longitud</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bases_bicimad.csv_F31182E7B7384CAFA03022B9484242ED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitud</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Latitud]</local-name>
+            <parent-name>[bases_bicimad.csv]</parent-name>
+            <remote-alias>Latitud</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bases_bicimad.csv_F31182E7B7384CAFA03022B9484242ED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Direccion</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Direccion]</local-name>
+            <parent-name>[bases_bicimad.csv]</parent-name>
+            <remote-alias>Direccion</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bases_bicimad.csv_F31182E7B7384CAFA03022B9484242ED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Barrio (bases bicimad.csv1)' datatype='string' name='[Barrio (bases_bicimad.csv1)]' role='dimension' type='nominal' />
+      <column caption='Calle (bases bicimad.csv1)' datatype='string' name='[Calle (bases_bicimad.csv1)]' role='dimension' type='nominal' />
+      <column caption='Direccion (bases bicimad.csv1)' datatype='string' name='[Direccion (bases_bicimad.csv1)]' role='dimension' type='nominal' />
+      <column caption='Distrito (bases bicimad.csv1)' datatype='string' name='[Distrito (bases_bicimad.csv1)]' role='dimension' type='nominal' />
+      <column caption='Fecha de Alta (bases bicimad.csv1)' datatype='integer' name='[Fecha de Alta (bases_bicimad.csv1)]' role='measure' type='quantitative' />
+      <column caption='Gis X (bases bicimad.csv1)' datatype='real' name='[Gis_X (bases_bicimad.csv1)]' role='measure' type='quantitative' />
+      <column caption='Gis X' datatype='real' name='[Gis_X]' role='measure' type='quantitative' />
+      <column caption='Gis Y (bases bicimad.csv1)' datatype='real' name='[Gis_Y (bases_bicimad.csv1)]' role='measure' type='quantitative' />
+      <column caption='Gis Y' datatype='real' name='[Gis_Y]' role='measure' type='quantitative' />
+      <column caption='Latitud (bases bicimad.csv1)' datatype='string' name='[Latitud (bases_bicimad.csv1)]' role='dimension' type='nominal' />
+      <column caption='Longitud (bases bicimad.csv1)' datatype='string' name='[Longitud (bases_bicimad.csv1)]' role='dimension' type='nominal' />
+      <column caption='Nº Finca (bases bicimad.csv1)' datatype='string' name='[Nº Finca (bases_bicimad.csv1)]' role='dimension' type='nominal' />
+      <column caption='Número (bases bicimad.csv1)' datatype='string' name='[Número (bases_bicimad.csv1)]' role='dimension' type='nominal' />
+      <column caption='Número de Plazas (bases bicimad.csv1)' datatype='integer' name='[Número de Plazas (bases_bicimad.csv1)]' role='measure' type='quantitative' />
+      <column caption='Tipo de Reserva (bases bicimad.csv1)' datatype='string' name='[Tipo de Reserva (bases_bicimad.csv1)]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_356C02905E294CADB25818D1EB3EC2A5]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='bases_bicimad.csv1' datatype='table' name='[__tableau_internal_object_id__].[bases_bicimad.csv_BC1DC25F43A547DA9ADFCEF801BD79CF]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='bases_bicimad.csv' datatype='table' name='[__tableau_internal_object_id__].[bases_bicimad.csv_F31182E7B7384CAFA03022B9484242ED]' role='measure' type='quantitative' />
+      <column caption='End Station' datatype='string' default-role='measure' default-type='quantitative' name='[end_station]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='end station Latitud' datatype='real' name='[end_station_Latitud]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='end station Longitud' datatype='real' name='[end_station_Longitud]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Hour Time' datatype='string' name='[hour_time]' role='dimension' type='nominal' />
+      <column caption='Size' datatype='integer' name='[size]' role='measure' type='quantitative' />
+      <column caption='Start Station' datatype='string' default-role='measure' default-type='quantitative' name='[start_station]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='start station Latitud' datatype='real' name='[start_station_Latitud]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='start station Longitud' datatype='real' name='[start_station_Longitud]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Travel Time' datatype='integer' name='[travel_time]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;USA&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_356C02905E294CADB25818D1EB3EC2A5'>
+            <properties context=''>
+              <relation connection='excel-direct.1frgiif0jvlyvi1fevs831mg2v4g' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:I14762:no:A1:I14762:0' header='yes' outcome='6'>
+                  <column datatype='string' name='start_station' ordinal='0' />
+                  <column datatype='string' name='end_station' ordinal='1' />
+                  <column datatype='integer' name='size' ordinal='2' />
+                  <column datatype='real' name='start_station_Latitud' ordinal='3' />
+                  <column datatype='real' name='start_station_Longitud' ordinal='4' />
+                  <column datatype='real' name='end_station_Longitud' ordinal='5' />
+                  <column datatype='real' name='end_station_Latitud' ordinal='6' />
+                  <column datatype='integer' name='travel_time' ordinal='7' />
+                  <column datatype='string' name='hour_time' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='bases_bicimad.csv1' id='bases_bicimad.csv_BC1DC25F43A547DA9ADFCEF801BD79CF'>
+            <properties context=''>
+              <relation connection='textscan.169s57r0eoh6gy15rv6jr1ddl7s3' name='bases_bicimad.csv1' table='[bases_bicimad#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_VE' separator=';'>
+                  <column datatype='string' name='Número' ordinal='0' />
+                  <column datatype='real' name='Gis_X' ordinal='1' />
+                  <column datatype='real' name='Gis_Y' ordinal='2' />
+                  <column datatype='integer' name='Fecha de Alta' ordinal='3' />
+                  <column datatype='string' name='Distrito' ordinal='4' />
+                  <column datatype='string' name='Barrio' ordinal='5' />
+                  <column datatype='string' name='Calle' ordinal='6' />
+                  <column datatype='string' name='Nº Finca' ordinal='7' />
+                  <column datatype='string' name='Tipo de Reserva' ordinal='8' />
+                  <column datatype='integer' name='Número de Plazas' ordinal='9' />
+                  <column datatype='string' name='Longitud' ordinal='10' />
+                  <column datatype='string' name='Latitud' ordinal='11' />
+                  <column datatype='string' name='Direccion' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='bases_bicimad.csv' id='bases_bicimad.csv_F31182E7B7384CAFA03022B9484242ED'>
+            <properties context=''>
+              <relation connection='textscan.169s57r0eoh6gy15rv6jr1ddl7s3' name='bases_bicimad.csv' table='[bases_bicimad#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_VE' separator=';'>
+                  <column datatype='string' name='Número' ordinal='0' />
+                  <column datatype='real' name='Gis_X' ordinal='1' />
+                  <column datatype='real' name='Gis_Y' ordinal='2' />
+                  <column datatype='integer' name='Fecha de Alta' ordinal='3' />
+                  <column datatype='string' name='Distrito' ordinal='4' />
+                  <column datatype='string' name='Barrio' ordinal='5' />
+                  <column datatype='string' name='Calle' ordinal='6' />
+                  <column datatype='string' name='Nº Finca' ordinal='7' />
+                  <column datatype='string' name='Tipo de Reserva' ordinal='8' />
+                  <column datatype='integer' name='Número de Plazas' ordinal='9' />
+                  <column datatype='string' name='Longitud' ordinal='10' />
+                  <column datatype='string' name='Latitud' ordinal='11' />
+                  <column datatype='string' name='Direccion' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[start_station]' />
+              <expression op='[Número (bases_bicimad.csv1)]' />
+            </expression>
+            <first-end-point object-id='Sheet1_356C02905E294CADB25818D1EB3EC2A5' />
+            <second-end-point object-id='bases_bicimad.csv_BC1DC25F43A547DA9ADFCEF801BD79CF' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[end_station]' />
+              <expression op='[Número]' />
+            </expression>
+            <first-end-point object-id='Sheet1_356C02905E294CADB25818D1EB3EC2A5' />
+            <second-end-point object-id='bases_bicimad.csv_F31182E7B7384CAFA03022B9484242ED' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='streets' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7891A03C-F505-40EF-9667-870F8B3F8282}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7AF78247-9563-4078-899F-DFEA34CE4F96}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone forceUpdate='true' h='49000' id='3' param='[com.datablick.extension.kepler.gl].[0.1.0].[https://tableau.kepler.gl/]' type-v2='dashboard-object' w='98400' x='800' y='50000'>
+            <add-in add-in-id='com.datablick.extension.kepler.gl' extension-url='https://tableau.kepler.gl/' extension-version='0.1.0' instance-id='E613CE9E829B4138A4019B05120F3DA2'>
+              <instance-settings />
+              <type-settings>
+                <dashboard />
+              </type-settings>
+            </add-in>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='' h='49000' id='7' param='https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/x9zemd5iq7ue427/keplergl_gochthw.json' type-v2='web' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='5' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone forceUpdate='true' h='98000' id='3' param='[com.datablick.extension.kepler.gl].[0.1.0].[https://tableau.kepler.gl/]' type-v2='dashboard-object' w='98400' x='800' y='1000'>
+                  <add-in add-in-id='com.datablick.extension.kepler.gl' extension-url='https://tableau.kepler.gl/' extension-version='0.1.0' instance-id='E613CE9E829B4138A4019B05120F3DA2'>
+                    <instance-settings />
+                    <type-settings>
+                      <dashboard />
+                    </type-settings>
+                  </add-in>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{83451020-D2C0-47B4-BFC0-32E87AB6956E}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1F781367-FE30-4C7A-8BD3-3C18563A2C0D}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2B816C38-CEA3-4958-A247-9CDDDF03E583}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{D6A2DF94-D005-44D9-AD61-4AD465FDD5A4}' />
+    </window>
+  </windows>
+  <referenced-extensions>
+    <referenced-extension>
+      <manifest manifest-version='0.1'>
+        <dashboard-extension extension-version='0.1.0' id='com.datablick.extension.kepler.gl'>
+          <default-locale>en_US</default-locale>
+          <name resource-id='name' />
+          <description>A high-performance WebGl based tool for visual exploration of large-scale geospatial data sets.</description>
+          <author email='keplergl-tableau@googlegroups.com' name='Multiple Contributors (See Git Repo)' organization='DataBlick, Starschema and Uber' website='https://kepler.gl/' />
+          <min-api-version>1.1</min-api-version>
+          <source-location>
+            <url>https://tableau.kepler.gl/</url>
+          </source-location>
+          <icon>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</icon>
+          <context-menu>
+            <configure-context-menu-item />
+          </context-menu>
+        </dashboard-extension>
+        <resources>
+          <resource id='name'>
+            <text locale='en_US'>Kepler.gl</text>
+          </resource>
+        </resources>
+      </manifest>
+      <referenced-views>
+        <referenced-view instances='1' viewId='Dashboard 1' />
+      </referenced-views>
+    </referenced-extension>
+  </referenced-extensions>
+</workbook>
